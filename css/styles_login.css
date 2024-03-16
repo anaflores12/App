@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 'poppins', sans-serif;
+
+}
+
+.header {
+    background-color: #e0aa3e; /* Color de fondo del encabezado */
+    padding: 20px;
+}
+
+.header-container {
+    overflow: hidden; /* Limpiar el float */
+    
+}
+
+.header-container img {
+    float: right; /* Colocar la imagen a la derecha */
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(1px 1px 1px #000);
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%; 
+    background: url('/imagenes/imagen2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid #E0AA3E;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #E0AA3E;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 35px 40px;
+    width: 310px;
+    border-bottom: 2px solid #E0AA3E;
+}
+
+.inputbox svg {
+    position: absolute;
+    right: 8px;
+    top: 20px;
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px; /* Ajusta el tamaño según sea necesario */
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #E0AA3E;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: 10px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #E0AA3E;
+}
+
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #E0AA3E;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: center;
+
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: #E0AA3E;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #E0AA3E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #433326;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000; /* Color de fondo negro */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.footer img {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    margin-top: 10px; /* Agrega un poco de espacio encima de la imagen */
+}
