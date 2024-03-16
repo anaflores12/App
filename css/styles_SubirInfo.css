@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../imagenes/fondo.jpeg'); /* Cambia 'background.jpg' por la ruta correcta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+}
+
+.header {
+    background-color: #E0AA3E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header img {
+    margin-left: auto;
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.imagen {
+    flex: 0 0 auto; /* No crecerá, no se reducirá, tamaño automático */
+    margin-right: 20px; /* Espacio entre la imagen y la información */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.informacion {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.informacion h2 {
+    margin-bottom: 5px; /* Espacio inferior entre los títulos */
+    width: 100%; /* Ancho completo */
+}
+
+input[type="text"] {
+    padding: 20px 40px;
+    margin-bottom: 10px; /* Espacio entre los campos de entrada */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 80%; /* Ancho completo */
+    text-align: center;
+}
+
+#btn-subir {
+    background-color: #EDC967;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    width: 80%; /* Ajusta el ancho del botón para dispositivos móviles */
+}
+
+#btn-subir:hover {
+    background-color: #B88A44;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer img {
+    max-width: 100px;
+    /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    margin-top: 10px;
+    /* Agrega un poco de espacio encima de la imagen */
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .footer img {
+        max-width: 80px;
+        /* Reduce el tamaño de la imagen para dispositivos móviles */
+    }
+}
